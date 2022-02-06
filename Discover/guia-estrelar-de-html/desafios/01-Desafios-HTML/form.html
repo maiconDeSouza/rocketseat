@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+
+        label{
+            font-weight: 900;
+        }
+
+        input[type="checkbox"] + label {
+            font-weight: 100;
+        }
+
+        div {
+            margin: 10px 0;
+        }
+
+        .input label{
+            display: block;
+        }
+            
+    </style>
+
+    <title>Contato</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Entre em contato</legend>
+            <div>
+                <label for="select">Assunto</label>
+                <select name="select" id="">
+                    <option value="suporte">suporte</option>
+                    <option value="sugestao">sugestao</option>
+                    <option value="reclamacao">reclamação</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="name">Nome Completo:</label>
+                <input type="text" name="name" id="">
+            </div>
+            <div class="input">
+                <label for="email">E-mailo:</label>
+                <input type="email" name="email" id="">
+            </div>
+            <div class="input">
+                <label for="msg">Mensagem:</label>
+                <textarea name="msg" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" name="aceitar" id="">
+                <label for="aceitar">Aceito receber novidades por e-mail</label>
+            </div>
+            <div>
+                <input type="button" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
