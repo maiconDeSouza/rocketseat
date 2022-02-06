@@ -80,3 +80,14 @@ A propriedade background-attachment determina se a posição da imagem vai ser f
 background-attachment: scroll;
 background-attachment: fixed;
 background-attachment: local;
+
+
+linear-gradient() é a função usada para criar gradient linear com o CSS.
+background: linear-gradient(45deg, red, yellow)
+radial-gradient() é a função usada para criar gradient circular.
+background: radial-gradient(green, red, yellow)
+background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.2))
+
+
+Podemos aplicar múltiplos backgrounds em um mesmo elemento, podendo ter cor sólida, gradiente ou imagem. Para isso basta separar por vírgula cada background.
+
