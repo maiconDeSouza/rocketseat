@@ -1,0 +1,25 @@
+#position{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box1, .box2, .box3 {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.box1 {
+    background-color: crimson;
+    
+}
+
+.box2 {
+    background-color: greenyellow;
+    
+}
+
+.box3 {
+    background-color: lightseagreen;
+}

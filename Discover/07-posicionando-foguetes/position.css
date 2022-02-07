@@ -1,0 +1,30 @@
+
+/* #position{
+    position: relative;
+} */
+.box1, .box2, .box3 {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.box1 {
+    background-color: crimson;
+    position: relative;
+    left: 50px;
+    top: 150px;
+    z-index: 1;
+}
+
+.box2 {
+    background-color: greenyellow;
+    z-index: 2;
+    position: relative;
+}
+
+.box3 {
+    background-color: lightseagreen;
+    position: absolute;
+    top: 0;
+    z-index: 8;
+}
