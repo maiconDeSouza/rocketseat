@@ -4,6 +4,15 @@
     padding: 0;
 }
 
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+  }
+
+  body{
+      background-color: var(--body-bg-color);
+  }
+
 .principal{
     /* width: 500px; */
     margin: 50px auto;
@@ -15,7 +24,7 @@
 .principal .img{
     width: 150px;
     height: 150px;
-    border: 3px solid silver;
+    border: 3px solid var(--purple);
     border-radius: 50%;
     background-image: url("../assets/linktree.jpeg");
     background-size: cover;
@@ -23,7 +32,7 @@
 }
 
 .principal .insta{
-    color: silver;
+    color: var(--purple);
     margin: 15px 0 25px 0;
 }
 
@@ -34,12 +43,20 @@
 .principal a .link{
     width: 250px;
     height: 40px;
-    border: 2px solid silver;
+    border: 2px solid var(--purple);
     border-radius: 5px;
     text-align: center;
     line-height: 40px;
-    color: silver;
+    color: var(--purple);
     margin-top: 15px;
+}
+
+.principal a .link:hover{
+    width: 255px;
+    height: 45px;
+    transition: width 0.2s, height 0.2s;
+    background-color: #bb99dd1a;
+    
 }
 
 
