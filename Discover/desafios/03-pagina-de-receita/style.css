@@ -60,6 +60,38 @@ header blockquote p{
     font-size: 0.75rem;
 }
 
-main{
+
+
+main #ingredientes h2, main #modo-de-preparo h2, main #dicas h2{
+    text-align: center;
     margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+main #ingredientes ul li, main #modo-de-preparo ol li{
+    line-height: 56px;
+    margin-left: 58px;
+}
+
+main #dicas ul li{
+    list-style: none;
+    line-height: 56px;
+    margin-left: 58px;
+}
+
+main #dicas p{
+    margin-top: 20px;
+}
+
+footer{
+    text-align: center;
+}
+
+footer p{
+    padding: 20px;
+}
+
+footer p span{
+    font-size: 25px;
+    color: red;
 }
