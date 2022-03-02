@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #eaeaea;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 1.7rem;
+}
+
+h2{
+    font-size: 1.25rem;
+}
+
+li, p{
+    font-size: 1rem;
+}
+
+
+.orange{
+    color: orange;
+}
+
+.container{
+    background-color: #fff;
+    width: 80vw;
+    margin: 10px auto 0;
+    padding: 30px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1{
+    margin-bottom: 20px;
+}
+
+header .img{
+    width: 70vw;
+    height: 280px;
+    background-image: url(./panqueca.jpg);
+    background-repeat: no-repeat;
+    border-radius: 20px; 
+}
+
+
+header blockquote{
+    align-self: flex-end;
+}
+
+header blockquote p{
+    font-size: 0.75rem;
+}
+
+main{
+    margin-top: 40px;
+}

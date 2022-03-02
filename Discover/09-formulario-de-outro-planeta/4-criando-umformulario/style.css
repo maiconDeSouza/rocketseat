@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+legend{
+    text-transform: uppercase;
+}
+
+
+
+label{
+    display: block;
+    margin-bottom: 1px;
+}
+
+input{
+    /* outline: none; */
+    margin-bottom: 8px;
+    width: 220px;
+}
+
+textarea{
+    width: 220px;
+}
+
+form{
+    width: 50%;
+    margin: 10px auto;
+    
+}
+
+form div{
+    width: 100%;
+    padding: 10px 50px;
+}
+
+#name, #email{
+    padding: 5px;
+}
+
+button{
+    display: block;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
