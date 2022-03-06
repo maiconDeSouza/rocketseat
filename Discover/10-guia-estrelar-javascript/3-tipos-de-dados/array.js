@@ -1,0 +1,1 @@
+const array = [2,5,'Maicon']
