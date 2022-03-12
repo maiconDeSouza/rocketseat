@@ -1,0 +1,5 @@
+# footer
+
+~~~ html
+<footer></footer>
+~~~
