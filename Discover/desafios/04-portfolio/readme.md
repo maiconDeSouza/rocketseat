@@ -1,0 +1,12 @@
+# Portfolio
+
+Consegui finalizar o projeto, na versão flex-box. Mas tem muita coisas que achei que fiz gambiarra.
+
+Como ainda tenho muita coisa para estudar e outros projetos para fazer do proprio modulo discover vou seguir para os próximos temas
+
+### Mas ainda vou voltar neste projeto para: 
+* melhorar o código dessa primeira versão
+* tentar fazer com ccs-grid + flex-box.
+* Deixar ela responsiva
+* consumir as APIs do GitHub
+
