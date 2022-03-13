@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+    "container"
+    "footer";
+    grid-template-rows: 1fr 30px;
+}
+
+.container{
+    grid-area: container;
+    max-width: 80vw;
+    margin: 30px auto;
+    
+
+    display: grid;
+    grid-template-areas: 
+    "aside main";
+
+    grid-template-columns: 0.5fr 1fr;
+    grid-column-gap: 1.2rem;
+}
+
+.card{
+    background-color: var(--bg-cards);
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+aside{
+    grid-area: aside;
+    min-width: 28vw;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+aside header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+aside header img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid greenyellow;
+    padding: 3px;
+    margin-bottom: 13px;
+}
+
+aside header h2{
+    font-size: 16px;
+}
+
+aside header span{
+    font-size: 10px;
+}
+
+aside .social{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .8rem;
+}
+aside .social div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
+
+aside .social div img{
+    width: 20px;
+}
+
+aside .social div span{
+    font-size: 12px;
+    line-height: 0;
+}
+
+aside .tec h2, main aside .exp h2{
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+aside .tec div{
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+aside .tec div span{
+    width: 100px;
+    height: 30px;
+    background-color: var(--bg-techs);
+    color: var(--body-bg-color);
+    font-size: 10px;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+aside .exp{
+    display: flex;
+    flex-direction: column;
+}
+
+aside .exp ul{
+    margin-left: 2.8rem;
+}
+aside .exp ul li{
+    margin-bottom: 20px;
+}
+aside .exp ul li p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+main{
+    grid-area: main;
+    min-width: 52vw;
+    
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main .my-projcts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .my-projcts h2, .my-posts h2{
+    font-size: 20px;
+}
+
+main .my-projcts span{
+    font-size: 12px;
+}
+
+main .proj{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+}
+
+main .proj .proj-min{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    flex-basis: 48%;
+}
+
+main .proj .proj-min .nome{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+main .proj .proj-min .nome img{
+    width: 20px;
+}
+
+main .proj .proj-min .nome p{
+    font-size: 12px;
+}
+
+main .proj .proj-min .descricao p{
+    font-size: 12px;
+}
+
+main .proj .proj-min .avaliacao .star{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+main .proj .proj-min .avaliacao .star div{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+main .proj .proj-min .avaliacao .star div img{
+    width: 20px;
+}
+
+main .proj .proj-min .avaliacao .star div span{
+    font-size: 12px;
+}
+
+main .proj .proj-min .avaliacao .star div:nth-of-type(2){
+    display: flex;
+    align-items: center;
+}
+
+main .proj .proj-min .avaliacao .star div:nth-of-type(2) div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+main .post{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+main .post img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+main .post .div-post{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main .post .div-post div:nth-of-type(1) h4{
+    font-size: 12px;
+}
+
+main .post .div-post div:nth-of-type(1) span{
+    font-size: 8px;
+}
+
+main .post .div-post div:nth-of-type(2) p{
+    font-size: 12px;
+}
+
+main .post .div-post div:nth-of-type(2) span{
+    font-size: 8px;
+    margin: 0 5px;
+}
+
+
+footer{
+    flex-basis: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p span{
+    font-size: 25px;
+    color: red;
+}
+
