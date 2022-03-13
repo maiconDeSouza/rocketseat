@@ -7,6 +7,6 @@ Como ainda tenho muita coisa para estudar e outros projetos para fazer do propri
 ### Mas ainda vou voltar neste projeto para: 
 * melhorar o código dessa primeira versão
 * tentar fazer com ccs-grid + flex-box.
-* Deixar ela responsiva
+* Deixar ele responsivo
 * consumir as APIs do GitHub
 
