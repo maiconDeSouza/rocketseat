@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+}
+
+.container{
+    width: 60vw;
+    height: 80vh;
+    margin: 10vh auto;
+    background-color: antiquewhite;
+    padding: 10px 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    justify-content: center;
+}
+
+.container div{
+    height: 150px;
+    flex-basis: 210px;
+    border: 1px solid grey;
+}

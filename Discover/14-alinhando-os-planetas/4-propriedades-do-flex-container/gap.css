@@ -1,0 +1,21 @@
+.box{
+    display: flex;
+    border: 1px soli red;
+    gap: 25vw;
+}
+
+.box div:nth-of-type(1){
+    background-color: aquamarine;
+}
+
+.box div:nth-of-type(2){
+    background-color: crimson;
+}
+
+.box div:nth-of-type(3){
+    background-color: dimgrey;
+}
+
+.box div:nth-of-type(4){
+    background-color: greenyellow;
+}

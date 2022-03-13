@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+button:nth-of-type(1), button:nth-of-type(2){
+    /* padding: 10px 35px; */
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 3px;
+}
+
+button:nth-of-type(1) img, button:nth-of-type(2) img{
+    width: 25px;
+}

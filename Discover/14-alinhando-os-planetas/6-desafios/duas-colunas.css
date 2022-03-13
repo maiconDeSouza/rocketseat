@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+    height: 100vh;
+    padding: 30px 10px 10px 10px;
+    display: flex;
+    gap: 1rem;
+}
+
+aside{
+    flex-basis: 25%;
+    border: 1px solid grey;
+    background-color: grey;
+}
+
+main{
+    border: 1px solid grey;
+    flex-grow: 1;
+    background-color: grey;
+}
+
+
