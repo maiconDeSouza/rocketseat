@@ -9,7 +9,8 @@ botao.addEventListener('click', e =>{
 })
 
 document.addEventListener('keydown', e =>{
-    if(divJanela.style.display === 'flex'){
+    
+    if(divJanela.style.display === 'flex' && e.key === 'Escape'){
         divJanela.style.display = 'none'
         botao.style.display = 'block'
         body.classList.remove('b-color')
