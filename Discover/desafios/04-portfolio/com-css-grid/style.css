@@ -285,3 +285,33 @@ footer p span{
     color: red;
 }
 
+@media screen and (max-width: 790px){
+    .container{
+        grid-area: container;
+        
+        
+    
+        display: grid;
+        grid-template-areas: 
+        "aside"
+        "main";
+    
+        grid-template-columns: 1fr;
+        grid-column-gap: 1.2rem;
+    }
+
+    .my-projcts{
+        margin-top: 1rem;
+    }
+
+    main .proj .proj-min{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        flex-basis: 100%;
+    }
+
+    main .post img{
+        display: none;
+    }
+}
