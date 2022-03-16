@@ -20,8 +20,8 @@ function separaTemperatura(temperatura){
     const sigla = (temp.slice(-1)).toLowerCase()
     const numerico = Number(temp.slice(0, temp.length - 1))
 
-    
-    if(sigla !== 'f' && sigla !== 'c'){return console.log('Coloque uma silga valída')}
+    if(isNaN(numerico)){return console.log(`Informe um número válido`)}
+    if(sigla !== 'f' && sigla !== 'c'){return console.log('Coloque um identificador correto(F ou C) válida')}
 
     switch(sigla){
         case 'c':
@@ -34,5 +34,5 @@ function separaTemperatura(temperatura){
     
 }
 
-separaTemperatura('10c')
+separaTemperatura('25C')
 
