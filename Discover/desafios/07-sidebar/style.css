@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap');
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+      --light-grey: #dce4e3;
+    --text-color: #084236;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: var(--text-color);
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+
+
+.sidebar{
+    background-color: var(--green);
+    width: 200px;
+    transition: width .5s;
+}
+
+.sidebar .logo-menu, .sidebar .nav-bar{
+    padding: 15px;
+}
+
+.container.active .sidebar{
+    width: 80px;
+}
+
+main {
+    background-color: var(--body-bg-color);
+    width: calc((100vw -200px));
+}
+
+.container.container main{
+    width: calc(100vw - 80px);
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo-menu{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+ul li img{
+    width: 20px;
+}
+
+.sidebar .logo-menu img:nth-of-type(1){
+    width: 50px;
+}
+
+.sidebar .logo-menu img:nth-of-type(2){
+    width: 25px;
+}
+
+.sidebar .nav-bar{
+    flex: 1;
+}
+
+.sidebar .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .nav-bar ul li a{
+    display: flex;
+    padding: 8px 12px;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.container.active .sidebar .nav-bar ul li a{
+    
+    align-items: center;
+}
+
+.sidebar .nav-bar ul li:nth-of-type(1) a{
+    background-color: var(--light-green);
+    border-radius: 15px;
+}
+
+.container.active .nav-bar ul li:nth-of-type(1) a{
+    align-items: center;
+    width: 50px;
+}
+.sidebar .nav-bar ul li a span{
+    margin-left: .8rem;
+    font-size: 12px;
+    /* opacity: 1;
+    transform: opacity .4s; */
+}
+
+.container.active .sidebar .logo-menu img[src="./images/logo.svg"]{
+    display: none;
+}
+
+.container.active .sidebar .logo-menu {
+    justify-content: center;
+}
+
+.container.active .sidebar ul li a span{
+    opacity: 0;
+}
+
+.sidebar .user{
+    background-color: var(--light-green);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.sidebar .user .img-user{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.sidebar .user .img-user img{
+    width: 40px;
+    border-radius: 3px;
+}
+
+.sidebar .user .img-user div{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .user .img-user div p{
+    font-size: 12px;
+}
+
+.sidebar .user .img-user div span{
+    font-size: 8px;
+}
+
+.container.active .sidebar .user .img-user{
+    display: none;
+}
+
+.container.active .sidebar .user{
+    justify-content: flex-end;
+}
