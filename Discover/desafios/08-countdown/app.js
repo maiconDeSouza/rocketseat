@@ -34,7 +34,7 @@ let x = setInterval(()=>{
 },1000)
 }
 
-const buttonInformar = document.querySelector('#informar').addEventListener('click', e =>{
+document.querySelector('#informar').addEventListener('click', e =>{
     e.preventDefault()
     const data = document.querySelector('input[type="date"]')
     const time = document.querySelector('input[type="time"]')
@@ -48,4 +48,29 @@ const buttonInformar = document.querySelector('#informar').addEventListener('cli
     const arrNumber = arr.map(e => Number(e))
 
     setCount(arrNumber[0], arrNumber[1], arrNumber[2], arrNumber[3], arrNumber[4], arrNumber[5])
+})
+
+
+//Button modal
+
+const buttonActiveModal = document.querySelector('.inscreva-se button')
+const divContainerModal = document.querySelector('.modal-container')
+
+buttonActiveModal.addEventListener('click', e =>{
+    e.preventDefault()
+    divContainerModal.classList.toggle('active')
+})
+
+document.addEventListener('click', e =>{
+    console.log(e.target.classList)
+    if(e.target.classList[0] === 'exit' || e.target.classList[0] === 'modal-container'){
+    divContainerModal.classList.toggle('active')
+
+    }
+})
+
+document.querySelector('#enviar').addEventListener('click', e =>{
+    e.preventDefault()
+    divContainerModal.classList.toggle('active')
+
 })
