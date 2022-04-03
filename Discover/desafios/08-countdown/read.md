@@ -1,3 +1,7 @@
 Finalizei o projeto CountDown
 
-depois voltarei para refinar o JS e também vou criar um modal.
+Com o desafio complementar de implementar um modal também finalizado.
+
+ficou um resultado bem legal.
+
+OBS: Prciso da uma refinada no js
