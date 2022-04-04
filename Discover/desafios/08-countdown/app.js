@@ -28,6 +28,10 @@ let x = setInterval(()=>{
     countSeconds.innerText = seconds < 10 ? `0${seconds}` : seconds
 
     if(nowTime <= 0){
+        countDays.innerText = '0'
+        countHours.innerText = '0'
+        countMinutes.innerText = '0'
+        countSeconds.innerText = '0'
         clearInterval(x)
     }
 
