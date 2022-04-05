@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --title: #fffcf9;
+    --subtitle: #b3b3b3;
+    --bg-button: #e9e6e3;
+    --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: var(--background);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.container img{
+    width: 80px;
+}
+
+.container h1{
+    margin-top: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--title);
+}
+
+.container button{
+    margin-top: 1.3rem;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    background-color: var(--bg-button);
+}
+
+.container button .logo-botao{
+    width: 25px;
+}
+
+.container button span{
+    font-weight: 900;
+}
+
+.container p{
+    width: 460px;
+    text-align: center;
+    color: var(--subtitle);
+    margin-top: 1.8rem;
+}
+
+.capa-filme img{
+    width: 200px;
+}
+
+.info-filme{
+    display: flex;
+    gap: 2rem;
+}
+
+.texto-filme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
