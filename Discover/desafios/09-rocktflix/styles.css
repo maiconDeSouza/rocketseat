@@ -55,6 +55,14 @@ body{
     font-weight: 900;
 }
 
+.container .b1{
+    display: none;
+}
+
+.container .b2{
+    display: block;
+}
+
 .container p{
     width: 460px;
     text-align: center;
@@ -75,4 +83,30 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media screen and (max-width: 790px){
+    .container p{
+        width: 300px;
+    }
+
+    .container h1{
+        text-align: center;
+    }
+
+    .info-filme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .container .b1{
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    .container .b2{
+        display: none;
+    }
 }

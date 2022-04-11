@@ -4,16 +4,23 @@ import {
   language,
 } from './api.js'
 
-const buttonPlay = document.querySelector('button')
+const buttonPlayB1 = document.querySelector('button.b1')
+const buttonPlayB2 = document.querySelector('button.b2')
 const capaFilme = document.querySelector('.capa-filme')
 const textoFilme = document.querySelector('.texto-filme')
 
 
 
 
-buttonPlay.addEventListener('click', e =>{
+buttonPlayB1.addEventListener('click', e =>{
   e.preventDefault()
-  // main()
+  
+  getMovie()
+})
+
+buttonPlayB2.addEventListener('click', e =>{
+  e.preventDefault()
+
   getMovie()
 })
 

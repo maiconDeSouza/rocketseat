@@ -8,4 +8,4 @@ Mas preciso melhorar:
 
 E preciso entregar:
 1- Gerar um filme aletório, após cada click. - Concluido 
-2- responsividade
+2- responsividade - concluido
