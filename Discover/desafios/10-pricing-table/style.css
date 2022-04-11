@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+  }
+
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+      list-style: none;
+  }
+
+  body{
+    background-color: var(--page-background);
+    max-width: 100vw;
+}
+
+  header{
+      height: 25vw;
+      background-color: var(--blue);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 3%;
+      gap: .4rem;
+  }
+  
+
+  header h1{
+      font-size: 3rem;
+      color: var(--page-background);
+      font-weight: 900;
+  }
+
+  header p{
+      color: var(--page-background);
+      width: 400px;
+      text-align: center;
+  }
+
+  main{
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      min-height: 80vh;
+  }
+
+  main .card{
+      width: 355px;
+      height: 470px;
+      background-color: var(--page-background);
+      border: 1px solid var(--gray);
+      margin-top: -120px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px black;
+  }
+
+  main .card.popular{
+      height: 520px;
+      margin-top: -140px;
+      box-shadow: 0 0 20px black;
+  }
+
+  main .card .card-header{
+      height: 70px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  main .card .card-header.popular{
+      background-color: var(--yellow);
+  }
+
+  main .card .card-header span{
+      font-weight: 900;
+      font-size: 25px;
+  }
+
+  main .card .card-header .card-button-popular{
+      display: none;
+  }
+
+  main .card .card-header.popular .card-button-popular{
+      display: block;
+      padding: 7px 20px;
+      border: none;
+      border-radius: 15px;
+      background-color: var(--blue);
+      color: var(--page-background);
+      font-weight: 900;
+  }
+
+  main .card .card-price {
+      padding: 20px;
+  }
+
+  main .card .card-price .span-price{
+      font-weight: 900;
+      font-size: 25px;
+  }
+
+  main .card .card-price .span-mes{
+      color: var(--gray);
+  }
+
+  main .card .card-price p{
+      margin-top: 10px;
+      color: var(--gray);
+  }
+
+  main .card .card-list{
+      height: 180px;
+      padding: 20px;
+  }
+
+  main .card .card-list ul{
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+  }
+
+  main .card .card-list ul li{
+      display: flex;
+      align-items: center;
+  }
+
+  main .card .card-list ul li span{
+      margin-left: 10px;
+      color: var(--gray);
+  }
+
+  main .card .card-button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 18px;
+  }
+
+  main .card .card-button button{
+      padding: 15px 80px;
+      background-color: var(--blue);
+      color: var(--page-background);
+      border: none;
+      border-radius: 12px;
+  }
+
+  @media screen and (max-width: 790px){
+    header{
+        width: 100vw;
+        height: 30vh;
+        background-color: var(--blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2px;
+        gap: .4rem;
+    }
+    header h1{
+        font-size: 10px;
+        color: var(--page-background);
+        font-weight: 900;
+        text-align: center;
+    }
+    header p{
+        font-size: 12px;
+        width: 300px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        min-height: 80vh;
+    }
+
+    header h1{
+      font-size: 3rem;
+      color: var(--page-background);
+      font-weight: 900;
+  }
+
+    main .card{
+        width: 90vw;
+        height: 470px;
+        background-color: var(--page-background);
+        border: 1px solid var(--gray);
+        margin-top: 15px;
+        border-radius: 15px;
+        box-shadow: 0 0 5px black;
+    }
+  
+    main .card.popular{
+        height: 520px;
+        margin-top: 15px;
+        box-shadow: 0 0 20px black;
+    }
+  }
