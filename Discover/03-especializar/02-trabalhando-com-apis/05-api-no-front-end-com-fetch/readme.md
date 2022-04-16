@@ -4,4 +4,4 @@ Assisti o início da aula desse pojeto e continuei sozinho porque peguei a ideia
 
 finalizei.
 
-Agora bou aprimorar esse código.
+Código melhorado, mas vale apena aprimorar ainda mais!!! 
