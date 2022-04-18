@@ -1,1 +1,0 @@
-Testando ssh distro solus
