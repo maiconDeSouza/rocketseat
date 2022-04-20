@@ -1,0 +1,19 @@
+{
+  "name": "02-primeiro-projeto-nodejs",
+  "version": "1.0.0",
+  "description": "* ### Requisitos   * [ ] Deve ser possível criar umma conta.   * [ ] Deve ser possível buscar o extrato bancário do cliente   * [ ] Deve ser possível realizar um depósito   * [ ] Deve ser possível realizar um saque   * [ ] Deve ser possível buscar o extrato bancário do cliente por data   * [ ] Deve ser possível atualizar dados da conta do cliente   * [ ] Deve ser possível obter dados da conta do cliente   * [ ] Deve ser possível deletar uma conta",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
