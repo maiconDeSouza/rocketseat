@@ -43,7 +43,7 @@ app.post('/users', (req, res) =>{
         todos: []
     }  
     users.push(newUser)
-    write(JSON.stringify(users))
+    write(JSON.stringify(users, null, 2))
     res.status(201).json(users)
 })
 
@@ -72,7 +72,7 @@ app.post('/todos', check, (req, res) =>{
 
     user.todos.push(task)
 
-    write(JSON.stringify(users))
+    write(JSON.stringify(users, null, 2))
 
     res.status(200).json({
         username: user.username,
@@ -87,13 +87,50 @@ app.put('/todos/:id', check, (req, res) =>{
 
     const check = user.todos.some(e => e.id === id)
     const checkId = user.todos.find(e => e.id === id)
-    console.log(checkId)
+    
     if(!check){return res.status(400).json({error:"Tarefa não encontrada"})}
     
     checkId.title = title
     checkId.deadline = new Date(deadline)
 
-    write(JSON.stringify(users))
+    write(JSON.stringify(users, null, 2))
+    res.status(200).json({
+        username: user.username,
+        todos: user.todos
+    })
+})
+
+app.patch('/todos/:id?', check, (req, res) =>{
+    const user = req.user
+    const {id} = req.params
+    const {done} = req.query
+
+    console.log(done)
+
+    const check = user.todos.find(e => e.id === id)
+    if(!check){return res.status(400).json({error:"Tarefa não encontrada"})}
+    
+    check.done = done === 'true'? true : false
+
+    write(JSON.stringify(users, null, 2))
+    res.status(200).json({
+        username: user.username,
+        todos: user.todos
+    })
+})
+
+app.delete('/todos/:id', check, (req, res) =>{
+    const user = req.user
+    const {id} = req.params
+
+    
+    const check = user.todos.find(e => e.id === id)
+    
+    if(!check){return res.status(400).json({error:"Tarefa não encontrada"})}
+    
+    user.todos.splice(check, 1)
+
+    write(JSON.stringify(users, null, 2))
     res.status(200).json({
         username: user.username,
         todos: user.todos
