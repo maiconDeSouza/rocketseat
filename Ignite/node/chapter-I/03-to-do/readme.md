@@ -3,5 +3,5 @@
 
  Nessa implementação estou salvando os dados do to-do list em um arquivo json.
 
-## Solucao da correção 
-- Vou implementar agora usando o tamplate e depois vou verificar a correção.
+## Template
+- realizei a tarefa pedida usando o template disponibilizado. Rodou 100%, assistindo a correção eu mudei principalmente o nome de algumas variáveis para melhorar meu código.
