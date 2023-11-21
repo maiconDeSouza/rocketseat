@@ -1,0 +1,38 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.wrapper .created, .wrapper .done {
+display: flex;
+gap: 0.5rem;
+
+font-size: 0.875rem;
+font-weight: 700;
+}
+
+.wrapper .created {
+    color: var(--blue);
+}
+
+.wrapper .done {
+    color: var(--purple);
+}
+
+
+span {
+    padding: 0.125rem 0.5rem;
+    border: none;
+    border-radius: 50%;
+
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,49 @@
+# Arquivos gerados pelo npm
+node_modules/
+
+# Arquivos gerados pelo Yarn
+yarn-error.log
+yarn.lock
+
+# Arquivos gerados pelo pnpm
+pnpm-lock.yaml
+pnpm-debug.log
+
+# Arquivos gerados pelo Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Logs de erros
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Arquivos de build e distribuição
+dist/
+build/
+out/
+bundle.js
+*.exe
+*.dmg
+*.pkg
+*.deb
+*.rpm
+
+# Arquivos de ambiente local
+.env
+
+# Dependências instaladas globalmente
+/node_modules/
+
+# Arquivos de cache e temporários
+/.pnp/
+.pnp.js
+.npmrc
+
+# Outros arquivos e diretórios específicos do projeto
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+db/app.db

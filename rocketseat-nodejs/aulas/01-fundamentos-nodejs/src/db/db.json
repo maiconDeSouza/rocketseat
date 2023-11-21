@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": "d0be6a25-39f6-463e-b09d-bce20257c53b",
+      "name": "Chacharito",
+      "email": "chacharito@clubautomovel.com.br"
+    },
+    {
+      "id": "2dcb5b43-3d95-45ae-9812-11ec16c88130",
+      "name": "Dante",
+      "email": "comandante@clubauau.com.br"
+    }
+  ]
+}
