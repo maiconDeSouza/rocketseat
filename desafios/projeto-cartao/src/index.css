@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #111827;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: #1f2937;
+}
+
+.card {
+  width: 280px;
+  height: 168px;
+  background-image: url('./assets/bg-blur.png');
+}
