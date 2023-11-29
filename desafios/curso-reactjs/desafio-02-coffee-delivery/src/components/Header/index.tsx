@@ -2,13 +2,13 @@ import { MapPinIcon, ShoppingCart } from 'lucide-react'
 import logo from '../../assets/logocoffee.png'
 export function Header() {
   return (
-    <header className="bg-background w-full h-[6.5rem] flex justify-center">
-      <div className="w-[70rem] flex items-center justify-between">
+    <header className="bg-background w-full h-[6.5rem] flex justify-between md:justify-center">
+      <div className="w-full md:w-[70rem] flex flex-col md:flex-row items-center justify-between p-2">
         <div>
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className="w-[5.25rem]" />
         </div>
-        <div className="flex items-center gap-3">
-          <div className="bg-purple-light w-[9rem] h-[2.375rem] rounded-md flex items-center gap-1 text-purple-dark font-baloo font-bold text-sm p-2">
+        <div className="flex items-center gap-6 md:gap-3 ">
+          <div className="bg-purple-light w-[9rem] h-[2.375rem] rounded-md flex justify-center items-center gap-1 text-purple-dark font-baloo font-bold text-sm p-2">
             <MapPinIcon size={22} color="#8047F8" />
             <span>Sua Cidade</span>
           </div>
