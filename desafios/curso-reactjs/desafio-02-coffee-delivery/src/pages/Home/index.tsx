@@ -2,13 +2,13 @@ import { Coffee, Package, ShoppingCart, Timer } from 'lucide-react'
 import banner from '../../assets/Imagem.png'
 import { IconAndText } from '../../components/IconAndText'
 import { useEffect, useState } from 'react'
-import db from '../../../coffee.json'
 import { CoffeeCard } from '../../components/CoffeeCard'
+import { api } from '../../api'
 
 export interface CoffeeProps {
   id: string
   cover: string
-  type: string
+  name: string
   tag: string[]
   description: string
   price: number
@@ -17,7 +17,12 @@ export interface CoffeeProps {
 export function Home() {
   const [coffeeList, setCoffeeList] = useState<CoffeeProps[]>([])
   useEffect(() => {
-    setCoffeeList(db)
+    async function loader() {
+      const response = await api.get('/coffee')
+      const data = response.data
+      setCoffeeList(data)
+    }
+    loader()
   }, [])
   return (
     <div className="flex flex-col gap-2">
@@ -77,16 +82,16 @@ export function Home() {
           <h2 className="font-baloo font-bold text-base-subtitle text-[2rem]">
             Nossos Cafés
           </h2>
-          <ul>
+          <ul className="flex flex-wrap justify-center items-center gap-4">
             {coffeeList.map((coffee) => {
               return (
-                <li key={coffee.id}>
+                <li key={coffee.id} className="my-8">
                   <CoffeeCard
-                    type={coffee.type}
-                    tag={coffee.tag}
                     cover={coffee.cover}
                     description={coffee.description}
+                    name={coffee.name}
                     price={coffee.price}
+                    tag={coffee.tag}
                   />
                 </li>
               )

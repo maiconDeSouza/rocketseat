@@ -2,38 +2,38 @@ import { ShoppingCart } from 'lucide-react'
 
 interface CoffeeCardProps {
   cover: string
-  type: string
+  name: string
   tag: string[]
   description: string
   price: number
 }
 
 export function CoffeeCard({
-  type,
-  tag,
+  name,
   price,
   description,
   cover,
+  tag,
 }: CoffeeCardProps) {
   return (
-    <div className="bg-background w-[16rem] h-[20rem] rounded-tl-md rounded-tr-[2rem] rounded-br-md rounded-bl-[2rem] border border-background flex flex-col items-center gap-4 p-2">
+    <div className="bg-background w-[16rem] h-[22rem] rounded-tl-md rounded-tr-[2rem] rounded-br-md rounded-bl-[2rem] border border-background flex flex-col items-center gap-4 p-2">
       <div className="flex justify-center">
         <img src={cover} alt="" className="w-[7.5rem] mt-[-1.5rem]" />
       </div>
-      <ul>
-        {tag.map((t) => {
+      <ul className="flex items-center gap-2">
+        {tag.map((tag) => {
           return (
             <li
-              key={t}
               className="p-1 text-yellow-dark bg-yellow-light rounded-lg text-xs border border-yellow-dark"
+              key={tag}
             >
-              {t}
+              {tag}
             </li>
           )
         })}
       </ul>
-      <h1 className="font-bold text-2xl">{type}</h1>
-      <p className="text-center text-base-label text-sm">{description}</p>
+      <h1 className="font-bold text-2xl">{name}</h1>
+      <p className="text-center text-base-label text-sm h-14">{description}</p>
       <div className="w-full flex justify-between p-2">
         <div className="flex justify-center items-center">
           <span className="text-xs font-baloo font-bold text-base-text">

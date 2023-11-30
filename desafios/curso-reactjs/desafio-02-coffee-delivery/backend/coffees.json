@@ -2,7 +2,7 @@
     "coffee":[
         {
           "id": "8c1d3b6d-3e9a-4f65-a4af-4bd1d449b33a",
-          "type": "Americano",
+          "name": "Americano",
           "tag": ["tradicional"],
           "cover": "https://i.imgur.com/Rv12GgN.png",
           "description": "Um café clássico e forte, preparado diluindo expresso em água quente.",
@@ -10,7 +10,7 @@
         },
         {
           "id": "d86d24a3-6b0f-4ed1-88e3-9e830c48c148",
-          "type": "Árabe",
+          "name": "Árabe",
           "tag": ["especial"],
           "cover": "https://i.imgur.com/LfwwUoh.png",
           "description": "Inspirado na tradição árabe, este café é rico e aromático, muitas vezes preparado com especiarias.",
@@ -18,7 +18,7 @@
         },
         {
           "id": "950b3b22-61f7-46ea-b29d-60baa69ee330",
-          "type": "Café com Leite",
+          "name": "Café com Leite",
           "tag": ["tradicional", "com leite"],
           "cover": "https://i.imgur.com/BEkHsUb.png",
           "description": "Uma mistura equilibrada de café forte e leite cremoso.",
@@ -26,7 +26,7 @@
         },
         {
           "id": "d5220c2b-3e1e-487f-aa1e-5ee6b01ee772",
-          "type": "Expresso Gelado",
+          "name": "Expresso Gelado",
           "tag": ["tradicional", "Gelado"],
           "cover": "https://i.imgur.com/CTq6a5S.png",
           "description": "Refrescante e revigorante, perfeito para os dias mais quentes.",
@@ -34,7 +34,7 @@
         },
         {
           "id": "22aa3052-d645-4147-b82a-7f34f7ea6124",
-          "type": "Capuccino",
+          "name": "Capuccino",
           "tag": ["tradicional", "com leite"],
           "cover": "https://i.imgur.com/C2rvoqW.png",
           "description": "Uma deliciosa combinação de café, leite vaporizado e espuma de leite.",
@@ -42,7 +42,7 @@
         },
         {
           "id": "2cc2f7c9-784c-4baa-b9d5-2a8580c30365",
-          "type": "Chocolate Quente",
+          "name": "Chocolate Quente",
           "tag": ["especial", "com leite"],
           "cover": "https://i.imgur.com/UhdV9KQ.png",
           "description": "Uma bebida indulgente e reconfortante, perfeita para os amantes de chocolate.",
@@ -50,7 +50,7 @@
         },
         {
           "id": "537cc18a-07cc-47b8-8d49-1aa13c887152",
-          "type": "Cubano",
+          "name": "Cubano",
           "tag": ["especial", "alcoólico", "gelado"],
           "cover": "https://i.imgur.com/SMQtV6b.png",
           "description": "Inspirado na tradição cubana, este café é adoçado e possui um toque especial.",
@@ -58,7 +58,7 @@
         },
         {
           "id": "f158bce3-59db-4127-aac8-04c015a6abdb",
-          "type": "Expresso",
+          "name": "Expresso",
           "tag": ["tradicional"],
           "cover": "https://i.imgur.com/LEA6Vyw.png",
           "description": "Um pequeno e forte shot de café, a escolha dos amantes do café puro.",
@@ -66,7 +66,7 @@
         },
         {
           "id": "fb13e647-7130-4ba9-87bb-758b117b90b1",
-          "type": "Expresso Cremoso",
+          "name": "Expresso Cremoso",
           "tag": ["tradicional"],
           "cover": "https://i.imgur.com/6fW5yT4.png",
           "description": "O expresso clássico com uma adição de creme, proporcionando uma textura suave.",
@@ -74,7 +74,7 @@
         },
         {
           "id": "d5b9cabb-8442-4ee5-944f-678f9e265c88",
-          "type": "Havaiano",
+          "name": "Havaiano",
           "tag": ["especial"],
           "cover": "https://i.imgur.com/hBkWoEo.png",
           "description": "Uma mistura exótica e tropical que incorpora sabores únicos.",
@@ -82,7 +82,7 @@
         },
         {
           "id": "63a325fc-9c91-45d7-83ad-02c27fb05713",
-          "type": "Irlandês",
+          "name": "Irlandês",
           "tag": ["especial", "alcoólico"],
           "cover": "https://i.imgur.com/4Bsur55.png",
           "description": "Inspirado na tradição irlandesa, este café muitas vezes inclui uísque e creme.",
@@ -90,7 +90,7 @@
         },
         {
           "id": "34c39435-6f32-46c5-a3bf-c63e69501d24",
-          "type": "Latte",
+          "name": "Latte",
           "tag": ["tradicional", "com leite"],
           "cover": "https://i.imgur.com/Js84Qx9.png",
           "description": "Um café suave e cremoso, geralmente decorado com arte em latte.",
@@ -98,14 +98,15 @@
         },
         {
           "id": "c11482a9-55a3-4d69-8a7b-9f9de81c23a4",
-          "type": "Macchiato",
+          "name": "Macchiato",
+          "tag": ["tradicional", "com leite"],
           "cover": "https://i.imgur.com/eJybdmZ.png",
           "description": "Um expresso com uma pequena quantidade de leite, equilibrando sabores intensos.",
           "price": 7.5
         },
         {
           "id": "3f58e89b-2a60-45e7-a24e-cccf1021684d",
-          "type": "Mochaccino",
+          "name": "Mochaccino",
           "tag": ["tradicional", "com leite"],
           "cover": "https://i.imgur.com/hMkvZwM.png",
           "description": "Uma deliciosa mistura de café, leite, e chocolate, proporcionando uma experiência indulgente.",
