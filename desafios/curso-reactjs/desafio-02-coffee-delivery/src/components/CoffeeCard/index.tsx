@@ -6,6 +6,7 @@ interface CoffeeCardProps {
   tag: string[]
   description: string
   price: number
+  id: string
 }
 
 export function CoffeeCard({
