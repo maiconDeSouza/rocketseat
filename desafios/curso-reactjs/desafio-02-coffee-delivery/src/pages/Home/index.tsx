@@ -7,6 +7,7 @@ import { CoffeeContext } from '../../contexts/CoffeeContext'
 
 export function Home() {
   const { coffeeList } = useContext(CoffeeContext)
+  console.log(coffeeList)
   return (
     <div className="flex flex-col gap-2">
       <main className="h-[34rem] flex justify-center items-center bg-background">
@@ -69,14 +70,7 @@ export function Home() {
             {coffeeList.map((coffee) => {
               return (
                 <li key={coffee.id} className="my-8">
-                  <CoffeeCard
-                    cover={coffee.cover}
-                    description={coffee.description}
-                    name={coffee.name}
-                    price={coffee.price}
-                    tag={coffee.tag}
-                    id={coffee.id}
-                  />
+                  <CoffeeCard id={coffee.id} />
                 </li>
               )
             })}
