@@ -7,7 +7,6 @@ import { CoffeeContext } from '../../contexts/CoffeeContext'
 
 export function Home() {
   const { coffeeList } = useContext(CoffeeContext)
-  console.log(coffeeList)
   return (
     <div className="flex flex-col gap-2">
       <main className="h-[34rem] flex justify-center items-center bg-background">

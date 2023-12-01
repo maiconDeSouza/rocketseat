@@ -1,6 +1,7 @@
 import { ShoppingCart } from 'lucide-react'
 import { useContext, useEffect, useState } from 'react'
 import { CoffeeContext, CoffeeListProps } from '../../contexts/CoffeeContext'
+import { Link } from 'react-router-dom'
 
 interface CoffeeCardProps {
   id: string
@@ -63,9 +64,11 @@ export function CoffeeCard({ id }: CoffeeCardProps) {
               +
             </button>
           </div>
-          <div className="w-[2.375rem] h-[2.375rem] bg-purple-dark rounded-md flex justify-center items-center">
-            <ShoppingCart size={22} color="#F3F2F2" />
-          </div>
+          <Link to="/checkout">
+            <div className="w-[2.375rem] h-[2.375rem] bg-purple-dark rounded-md flex justify-center items-center">
+              <ShoppingCart size={22} color="#F3F2F2" />
+            </div>
+          </Link>
         </div>
       </div>
     </div>
