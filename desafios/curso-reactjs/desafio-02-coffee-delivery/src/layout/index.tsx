@@ -6,8 +6,14 @@ export function Layout() {
   return (
     <>
       <CoffeeProvider>
-        <Header />
-        <Outlet />
+        <div className="flex flex-col">
+          <div className="h-[6.5rem]">
+            <Header />
+          </div>
+          <div>
+            <Outlet />
+          </div>
+        </div>
       </CoffeeProvider>
     </>
   )

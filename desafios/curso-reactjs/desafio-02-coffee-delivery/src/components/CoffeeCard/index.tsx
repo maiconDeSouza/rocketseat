@@ -8,7 +8,8 @@ interface CoffeeCardProps {
 }
 
 export function CoffeeCard({ id }: CoffeeCardProps) {
-  const { coffeeList, onPlusCart, onLessCart } = useContext(CoffeeContext)
+  const { coffeeList, onPlusCart, onLessCart, formatPrice } =
+    useContext(CoffeeContext)
   const [card, setCard] = useState<CoffeeListProps>()
 
   useEffect(() => {
@@ -17,6 +18,9 @@ export function CoffeeCard({ id }: CoffeeCardProps) {
       setCard(coffeeCard)
     }
   }, [coffeeList, id])
+
+  const price = typeof card?.price === 'number' ? formatPrice(card.price) : '0'
+  const formatPriceString = price.slice(2)
 
   return (
     <div className="bg-background w-[16rem] h-[22rem] rounded-tl-md rounded-tr-[2rem] rounded-br-md rounded-bl-[2rem] border border-background flex flex-col items-center gap-4 p-2">
@@ -45,7 +49,7 @@ export function CoffeeCard({ id }: CoffeeCardProps) {
             R$
           </span>
           <span className="text-2xl font-roboto font-bold text-base-text">
-            {card?.price}
+            {formatPriceString}
           </span>
         </div>
         <div className="flex gap-2">

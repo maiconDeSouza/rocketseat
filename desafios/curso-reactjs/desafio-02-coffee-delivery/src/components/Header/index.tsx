@@ -4,7 +4,8 @@ import { useContext } from 'react'
 import { CoffeeContext } from '../../contexts/CoffeeContext'
 import { Link } from 'react-router-dom'
 export function Header() {
-  const { totalItemsInCart } = useContext(CoffeeContext)
+  const { totalItemsInCart, address } = useContext(CoffeeContext)
+  const city = address.localidade || 'Sua Cidade'
   return (
     <header className="bg-background w-full h-[6.5rem] flex justify-between md:justify-center fixed">
       <div className="w-full md:w-[70rem] flex flex-col md:flex-row items-center justify-between p-2">
@@ -16,7 +17,7 @@ export function Header() {
         <div className="flex items-center gap-6 md:gap-3 ">
           <div className="bg-purple-light w-[9rem] h-[2.375rem] rounded-md flex justify-center items-center gap-1 text-purple-dark font-baloo font-bold text-sm p-2">
             <MapPinIcon size={22} color="#8047F8" />
-            <span>Sua Cidade</span>
+            <span>{city}</span>
           </div>
           <Link to="/checkout">
             <div className="relative bg-yellow-light w-[2.375rem] h-[2.375rem] rounded-md p-2 flex justify-center items-center">
