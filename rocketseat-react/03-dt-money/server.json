@@ -1,0 +1,92 @@
+{
+  "transactions": [
+    {
+      "id": "3f2b6bca-4183-4b94-9d8d-4cfbd58333a1",
+      "descricao": "Desenvolvimento de Site",
+      "operacao": "entrada",
+      "valor": 1501,
+      "tipo": "freelance",
+      "data": "2023-01-15"
+    },
+    {
+      "id": "6d8a9f0d-52ef-4e78-a0e5-d348a6dbef5d",
+      "descricao": "Compras do Mês",
+      "operacao": "saída",
+      "valor": 450,
+      "tipo": "compras do mês",
+      "data": "2023-01-20"
+    },
+    {
+      "id": "98c3f6ec-9bc2-41eb-9e3b-ae0f7d35ac97",
+      "descricao": "Lanchonete",
+      "operacao": "saída",
+      "valor": 25.5,
+      "tipo": "lazer",
+      "data": "2023-02-05"
+    },
+    {
+      "id": "bf1f0a29-79f8-40a0-85dd-cb9c6a3e0d23",
+      "descricao": "Salário",
+      "operacao": "entrada",
+      "valor": 3000,
+      "tipo": "salario",
+      "data": "2023-02-10"
+    },
+    {
+      "id": "7452e87a-cb29-4947-b19f-3ac6a17ed9c7",
+      "descricao": "Compra Avulsa",
+      "operacao": "saída",
+      "valor": 70,
+      "tipo": "compra avulsa",
+      "data": "2023-02-15"
+    },
+    {
+      "id": "19a2c7a1-56c2-4e58-94b8-539c44c0e45f",
+      "descricao": "Freelance",
+      "operacao": "entrada",
+      "valor": 800,
+      "tipo": "freelance",
+      "data": "2023-03-02"
+    },
+    {
+      "id": "e3599d80-8568-4e74-8a7c-8f27ec6eb2b8",
+      "descricao": "Emprestimo",
+      "operacao": "entrada",
+      "valor": 500,
+      "tipo": "emprestimo",
+      "data": "2023-03-10"
+    },
+    {
+      "id": "5a6063b3-3a02-4f25-8f63-5f482b6c8624",
+      "descricao": "Lazer",
+      "operacao": "saída",
+      "valor": 120,
+      "tipo": "lazer",
+      "data": "2023-03-18"
+    },
+    {
+      "id": "11bcb0cf-cb68-4c97-9a4e-0bfb8816cf1b",
+      "descricao": "Compras do Mês",
+      "operacao": "saída",
+      "valor": 480,
+      "tipo": "compras do mês",
+      "data": "2023-04-05"
+    },
+    {
+      "id": "7e78a21e-0bc2-4a0e-8c4a-5e76461e7c02",
+      "descricao": "Freelance",
+      "operacao": "entrada",
+      "valor": 700,
+      "tipo": "freelance",
+      "data": "2023-04-15"
+    },
+    {
+      "id": "20a871a9-116c-44ee-8e1f-f01f209598d6",
+      "descricao": "Caixa JBL",
+      "valor": 244,
+      "operacao": "saida",
+      "tipo": "Lazer",
+      "data": "2023-12-29"
+    }
+  ]
+}
