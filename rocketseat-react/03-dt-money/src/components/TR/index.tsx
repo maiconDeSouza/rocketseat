@@ -14,7 +14,11 @@ export function TR({ title, value, type, date }: TRPros) {
   const { formatPrice } = useContext(TransactionsContext)
   return (
     <tr>
-      <td width="50%" className={`${td} rounded-tl-md rounded-bl-md`}>
+      <td
+        width="50%"
+        className={`${td} rounded-tl-md rounded-bl-md`}
+        title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus rem deserunt iste sunt. Amet repudiandae exercitationem quae maiores maxime? Delectus debitis ipsa cum praesentium voluptatibus culpa reiciendis, deleniti et aut."
+      >
         {title}
       </td>
       <td className={`${td} ${classValue}`}>{formatPrice(value)}</td>
