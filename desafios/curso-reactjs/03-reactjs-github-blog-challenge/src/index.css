@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, input, textarea, button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  @apply bg-mcn-base-background text-mcn-base-text
+}
