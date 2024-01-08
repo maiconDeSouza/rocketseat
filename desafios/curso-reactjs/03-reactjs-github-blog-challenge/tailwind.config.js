@@ -22,9 +22,6 @@ export default {
       gridTemplateRows: {
         mcn: '10.25rem 1fr;',
       },
-      backgroundImage: {
-        mcn: 'url(./src/assets/header-cover.svg)',
-      },
     },
   },
   plugins: [],

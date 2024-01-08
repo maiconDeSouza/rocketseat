@@ -7,3 +7,8 @@ body, input, textarea, button {
   font-size: 1rem;
   @apply bg-mcn-base-background text-mcn-base-text
 }
+
+/* header {
+  background-image: url(./src/assets/header-cover.svg);
+  background-position: center;
+} */
