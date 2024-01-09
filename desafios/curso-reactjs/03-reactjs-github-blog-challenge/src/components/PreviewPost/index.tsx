@@ -20,14 +20,14 @@ export function PreviewPost(post: PreviewPostProps) {
       <article className="md:w-[26rem] max-w-full h-[16.25rem] py-8 px-4 bg-mcn-base-post rounded-md flex flex-col justify-center gap-4">
         <header className="flex">
           <span className="text-xl">{post.title}</span>
-          <span className="w-96 text-sm flex justify-center">
+          <span className="w-40 text-sm flex justify-center">
             {formatDistanceToNow(post.updated_at, {
               addSuffix: true,
               locale: ptBR,
             })}
           </span>
         </header>
-        <main>
+        <main className="max-w-full">
           <Markdown>{`${sliceString(post.body, 100)}...`}</Markdown>
         </main>
       </article>
