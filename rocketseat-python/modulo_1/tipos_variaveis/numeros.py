@@ -36,4 +36,3 @@ print(f"convertendo o valor soma que é um inteiro para ponto flutuante usando f
 modulo = n1 % n2
 print(f"O modulo de {n1} % {n2} é igual {modulo}")
 
-

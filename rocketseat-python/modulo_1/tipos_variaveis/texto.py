@@ -16,8 +16,3 @@ print(f"Nome completo (3° forma ): {full_name}")
 print("Nome completo (4° forma ): %s" % full_name)
 print("Nome completo (5° forma ): %s e tenho %s anos" % (full_name, age))
 print("Nome completo (6° forma ): {} e tenho {} anos".format(full_name, age))
-
-
-
-
-
